@@ -4,16 +4,6 @@
 
 This project performs an **end-to-end Exploratory Data Analysis (EDA)** on an Airbnb listings dataset to understand pricing patterns, demand, and factors affecting listing performance.
 
-The analysis focuses on answering key business questions such as:
-
-* Which locations are most expensive?
-* Which room types generate higher revenue?
-* Do reviews influence price and demand?
-* How does price change over time?
-
-The project follows a structured **4-notebook industry workflow**:
-Data Understanding → Cleaning → Exploration → Statistical Analysis → Insights.
-
 ---
 
 ## 📅 Progress Log
@@ -27,7 +17,6 @@ Data Understanding → Cleaning → Exploration → Statistical Analysis → Ins
   * `last_review`
   * `reviews_per_month`
 * Observed extreme values in the `price` column.
-* Logged initial data quality issues.
 
 ---
 
@@ -41,8 +30,6 @@ Data Understanding → Cleaning → Exploration → Statistical Analysis → Ins
 * Removed extreme price outliers using **IQR method**.
 * Created `log_price` to reduce skewness.
 * Standardized categorical values.
-
-Dataset became clean and ready for analysis.
 
 ---
 
@@ -79,8 +66,6 @@ Created new variables:
 * **ANOVA:** Price differs significantly across locations (p < 0.05).
 * **Chi-Square:** Room type distribution varies by location.
 
-These tests statistically validated EDA findings.
-
 ---
 
 ## 📈 Key Business Insights
@@ -100,17 +85,6 @@ These tests statistically validated EDA findings.
 * **Visualization:** Matplotlib, Seaborn
 * **Statistics:** Scipy
 * **Environment:** Jupyter Notebook
-
----
-
-## 📊 Project Structure
-
-```
-01_data_overview.ipynb
-02_cleaning_preprocessing.ipynb
-03_univariate_bivariate_eda.ipynb
-04_stats_time_features_final_insights.ipynb
-```
 
 ---
 
